@@ -49,6 +49,8 @@ app.delete("/users/:id",(req, res)=>{
     
 
 });
+//i found that when i put "app.listen(""3001)", the program would run the first time then raise and error the following times
+// but with "2001" the problem doesn't arise. 
 app.listen("2001",()=>{
     console.log("Server running on port 3001")
 });
